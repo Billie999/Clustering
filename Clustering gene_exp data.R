@@ -15,7 +15,7 @@ library(tidyverse)
 
 
 # 1. Read the dataset directly from the ARFF file into a data frame.
-golub <- read.arff("/Users/Biljana/Data Mining/Ass 2/golub-1999-v1_database.arff") # read data from Weka Attribute-Relation File Format (ARFF) files into a data frame (golub)
+golub <- read.arff("/path/golub-1999-v1_database.arff") # read data from Weka Attribute-Relation File Format (ARFF) files into a data frame (golub)
 dim(golub) # retrieve dimensions of the data frame
 sum(is.na(golub)) # overall number of missing values in the data frame
 levels(golub$Classe) # factor levels of the categorical variable Classe
@@ -160,7 +160,7 @@ dendrogram_wl_rect_scaled <- rect.dendrogram(dendrogram_wl_scaled_golub, k = 2, 
 
 # Activity 2: Clustering genes (Part A)
 # 11. Read the dataset directly from the ARFF file into a data frame.
-yeast <- read.arff("/Users/Biljana/Data Mining/Ass 2/yeast.arff") # read data from Weka Attribute-Relation File Format (ARFF) files into a dataframe
+yeast <- read.arff("/path/yeast.arff") # read data from Weka Attribute-Relation File Format (ARFF) files into a dataframe
 dim(yeast) # retrieve dimensions of the data frame
 
 # 12. Set aside the rightmost column (containing the class labels) from the data, storing it separately from the remaining data frame (with the 20 predictors).
