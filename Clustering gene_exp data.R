@@ -1,6 +1,6 @@
-# Assignment 2
+
 # title: Clustering gene-expression data
-# name: Biljana Simonovikj
+
 
 library(foreign)
 library(dplyr)
